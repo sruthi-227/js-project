@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Court - Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://www.example.com/your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .login-box .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #e65500;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .register-link a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .login-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+                <button type="submit" id="login">Login</button>
+            </form>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <div class="guest-access">
+                <button onclick="guestLogin()">Continue as Guest</button>
+            </div>
+        </div>
+    </div>
+    <h3>Dont’t Have An Account?</h3>
+    <div class="col-lg-6">
+        <div class="login__register">
+            <h3>Dont’t Have An Account?</h3>
+            <a href="register.html" class="primary-btn">Register Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="login__social">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+            <div class="login_social_links">
+                <span>or</span>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i> Sign in With
+                            Facebook</a></li>
+                    <li><a href="https://www.google.com/" target="_blank" class="google"><i class="fa fa-google"></i> Sign
+                            in With Google</a></li>
+                    <li><a href="https://x.com/?lang=en" target="_blank" class="twitter"><i class="fa fa-twitter"></i> Sign
+                            in With Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> 
+</div>
+   
+    <script>
+        const loginForm = document.getElementById('login');
+
+        loginForm.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === "" || password === "") {
+                alert("Please fill in both fields.");
+            } else {
+                // alert("Login Successful!");
+                guestLogin();
+                // Here you can add the login logic (e.g., API call, form submission)
+            }
+        });
+        function guestLogin() {
+            window.location.href = './index.html';
+        }
+    </script>
+</body>
+</html>

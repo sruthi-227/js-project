@@ -1,0 +1,352 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url('./delivery\ image.webp');
+    background-size: cover;  
+    background-position: center;
+    background-attachment: fixed; 
+    background-color: #4267b2; 
+}
+
+.logo{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 22px;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 22px;
+}
+.searchBar input{
+    width: 300px;
+    height: 13px;
+    padding: 11px;
+    font-size: 17px;
+    border: 1px solid rgb(83, 83, 83);
+    outline: none;
+    border-radius: 33px;
+     
+}
+.searchBar button{
+    width: 60px;
+    height: 37px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+     margin-left: -33px;
+
+}
+
+.showMeal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: -53px;
+    padding: 22px;
+
+}
+.showMeal .card{
+    width: 300px;
+    height: 400px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 32px;
+    border-radius: 4px;
+    box-shadow: 1px 3px 3px 3px rgb(221, 221, 221);
+    
+}
+.card img{
+    width: 100%;
+    border-radius: 4px;
+
+}
+.card p{
+    margin-top: 11px;
+
+}
+.card button{
+    margin-top: 11px;
+    width: 90px;
+    height: 28px;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    font-size: 16px;
+    border: none;
+   
+}
+#category{
+    
+    width: 600px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    
+}
+#category .dishName{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s ease;
+    gap: 11px;
+
+}
+.dishName input{
+    width: 100px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    border-radius: 22px;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(2, 133, 255);
+    color: white;
+    
+} 
+.dishName input:hover{
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+
+#category button{
+    position: relative;
+    top: 43px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}
+#prevBtn{
+    padding:11px;
+ 
+     
+     
+}
+#nextBtn{
+    position: relative;
+    left: 80%;
+    border: none;
+    background-color: transparent;
+}
+@media screen and (max-width:700px){
+    nav{
+        height: 120px;
+    }
+    .logo h1{
+        margin-top: 6px;
+    }
+    
+    #category{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:450px){
+    #category input {
+        width: 65px;
+        height: 33px;
+        font-size: 13px;
+    }
+    #category .dishName{
+        gap: 3px;
+    }
+    #category #nextBtn{
+        left: 67%;
+    }
+}
+@media screen and (max-width:500px){
+    .searchBar input{
+        width: 60%;
+         
+    }
+    /* .searchBar button {
+        width: 70px;
+        font-size: 15px;
+        
+    } */
+}
+.login {
+	padding-top: 130px;
+	padding-bottom: 120px;
+}
+
+.login__form {
+	position: relative;
+	padding-left: 245px;
+}
+
+.login__form:after {
+	position: absolute;
+	right: -24px;
+	top: -40px;
+	height: 330px;
+	width: 5px;
+	background: rgba(255, 255, 255, 0.2);
+	content: "";
+}
+
+.login__form h3 {
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 30px;
+}
+
+.login_form form .input_item {
+	position: relative;
+	width: 870px;
+	margin-bottom: 20px;
+}
+
+.login_form form .input_item:before {
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	height: 30px;
+	width: 1px;
+	background: #b7b7b7;
+	content: "";
+}
+
+.login_form form .input_item input {
+	height: 50px;
+	width: 100%;
+	font-size: 15px;
+	color: #b7b7b7;
+	background: #ffffff;
+	border: none;
+	padding-left: 76px;
+}
+
+.login_form form .input_item input::-webkit-input-placeholder {
+	color: #b7b7b7;
+}
+
+.login_form form .input_item input::-moz-placeholder {
+	color: #b7b7b7;
+}
+
+.login_form form .input_item input:-ms-input-placeholder {
+	color: #b7b7b7;
+}
+
+.login_form form .input_item input::-ms-input-placeholder {
+	color: #b7b7b7;
+}
+
+.login_form form .input_item input::placeholder {
+	color: #b7b7b7;
+}
+
+.login_form form .input_item span {
+	color: #b7b7b7;
+	font-size: 20px;
+	position: absolute;
+	left: 15px;
+	top: 13px;
+}
+
+.login__form form button {
+	border-radius: 0;
+	margin-top: 10px;
+}
+
+.login__form .forget_pass {
+	font-size: 15px;
+	color: #ffffff;
+	display: inline-block;
+	position: absolute;
+	right: 60px;
+	bottom: 12px;
+}
+
+.login__register {
+	padding-left: 50px;
+}
+
+.login__register h3 {
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 30px;
+}
+
+.login__register .primary-btn {
+	background: #e53637;
+	padding: 12px 42px;
+}
+
+.login__social {
+	padding-top: 52px;
+}
+
+.login_social_links {
+	text-align: center;
+}
+
+.login_social_links span {
+	color: #ffffff;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.login_social_links ul li {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.login_social_links ul li:last-child {
+	margin-bottom: 0;
+}
+
+.login_social_links ul li a {
+	color: #ffffff;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	width: 460px;
+	padding: 14px 0;
+	position: relative;
+	margin: 0 auto;
+}
+
+.login_social_links ul li a.facebook {
+	background: #4267b2;
+}
+
+.login_social_links ul li a.google {
+	background: #ff4343;
+}
+
+.login_social_links ul li a.twitter {
+	background: #1da1f2;
+}
+
+.login_social_links ul li a i {
+	font-size: 20px;
+	position: absolute;
+	left: 32px;
+	top: 14px;
+}
+/* Guest login */
